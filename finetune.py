@@ -295,7 +295,7 @@ def train():
         model_args.model_name_or_path,
         config=config,
         cache_dir=training_args.cache_dir,
-        device_map=device_map,
+        # device_map=device_map,
         trust_remote_code=True,
         quantization_config=GPTQConfig(
             bits=4, disable_exllama=True
